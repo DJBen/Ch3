@@ -129,6 +129,16 @@ struct LinkedGeoPolygon {
     LinkedGeoPolygon *next;
 };
 
+/** @struct CoordIJ
+ * @brief IJ hexagon coordinates
+ *
+ * Each axis is spaced 120 degrees apart.
+ */
+typedef struct {
+    int i;  ///< i component
+    int j;  ///< j component
+} CoordIJ;
+
 /** @defgroup geoToH3 geoToH3
  * Functions for geoToH3
  * @{
