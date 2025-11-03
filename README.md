@@ -1,6 +1,10 @@
 # Ch3
 
-A small Swift package that exposes the [H3](https://github.com/uber/h3) to Swift. [SwiftH3](https://github.com/bdotdub/SwiftH3) is probably what you want to use. This library works directly with the C functions, whereas [SwiftH3](https://github.com/bdotdub/SwiftH3) is more idiomatic Swift.
+A small Swift package that exposes the [H3](https://github.com/uber/h3) to Swift.This library works directly with the C functions.
+
+## Difference from upstream
+
+This library has Ch3 updated to `4.3.0` whereas the upstream stayed `3.x`.
 
 ## Example
 
@@ -15,6 +19,3 @@ h3ToString(self, cString, 17)
 print("\(String(cString: cString!))")
 ```
 
-------
-
-Thanks to @s1ddok for his [Cpng](https://github.com/s1ddok/Cpng) repo, from which I used to figure out how to build this repo.
